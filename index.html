@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta tags and other essential stuffs-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!--Link to bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+  <!--Link to external css-->
+  <link rel="stylesheet" href="styles.css">
+  
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+   <!-- Latest compiled and minified CSS -->
+   
+</head>
+<body>
+
+  <div class="container p-0"">
+    <!--mobile design -->
+    
+    <div class="row p-0 d-flex d-sm-none m-0 mobile el1" >
+      <div class="col-12 first-col d-flex flex-column align-items-center m-0">
+        <div class="h4 pt-4" id="result" >Your Result</div>
+          <div class="mt-4 mb-4 d-flex flex-column justify-content-center" id="circle" >
+            <div class="text-center d-flex flex-column ">
+              <div class="h1" style="color: white;font-weight: 700; font-family: 'HankenGrotesk_xBold'; font-size: 70px;">76</div>
+              <div class="h6 " style="color:  hsl(0, 0%, 100%,0.5) ; font-weight: 550;">of 100</div>
+            </div>  
+          </div>
+          <div class="h3" id="great">Great</div>
+          <div class="text d-flex flex-column align-items-center mb-5" >
+            <div>You scored higher than 65% of the</div>
+            <div>people who have taken these tests.</div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="container d-flex d-sm-none mobile el2 flex-column">
+      <div class="row grade m-2 mb-0 " id="summary">Summary</div>
+      <div class="row grade m-2 p-3" style="background-color: hsl(0, 100%, 67%,0.1); " >
+        <div class="col-8 label" style="color:hsl(0, 100%, 67%) ;">
+          <img src="assets/images/icon-reaction.svg" alt="">
+          Reaction</div>
+        <div class="col-2 num1 ">80 </div>
+        <div class="col-1 num2 p-0">/100</div>   
+      </div>
+      <div class="row grade m-2 p-3" style="background-color: hsl(39, 100%, 56%,0.1); " >
+        <div class="col-8 label" style="color:hsl(39, 100%, 56%) ;">
+          <img src="assets/images/icon-memory.svg" alt="">
+          Memory</div>
+        <div class="col-2 num1 ">92  </div>
+        <div class="col-1 num2 p-0">/100</div>   
+      </div>
+      <div class="row grade m-2 p-3" style="background-color: hsl(166, 100%, 37%,0.1); " >
+        <div class="col-8 label" style="color:hsl(166, 100%, 37%) ;">
+          <img src="assets/images/icon-verbal.svg" alt="">
+          Verbal</div>
+        <div class="col-2 num1 ">61 </div>
+        <div class="col-1 num2 p-0">/100</div>   
+      </div>
+      <div class="row grade m-2 p-3" style="background-color: hsl(234, 85%, 45%,0.1); " >
+        <div class="col-8 label" style="color:hsl(234, 85%, 45%) ;">
+          <img src="assets/images/icon-visual.svg" alt="">
+          Visual</div>
+        <div class="col-2 num1 ">72 </div>
+        <div class="col-1 num2 p-0">/100</div>   
+      </div>
+      <div class="row grade d-flex justify-content-center m-2 p-3 continue" >
+         Continue
+      </div>
+    </div>
+    
+    
+    <!-- desktop design-->
+    <div class="container ">
+      <div class="row d-none d-sm-flex  desktop justify-content-center text-center">
+        <div class="col-md-10 col-lg-8 ">
+          <div class="row " style="border-radius: 20px; box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);">
+            <div class="col-6 el1" style="border-radius: 20px;">
+              <div class=" first-col d-flex flex-column  align-items-center  ">
+                <div class="h4 pt-4" id="result" >Your Result</div>
+                  <div class="mt-4 mb-4 d-flex flex-column justify-content-center" id="circle" >
+                    <div class="text-center d-flex flex-column ">
+                      <div class="h1" style="color: white;font-weight: 700; font-family: 'HankenGrotesk_xBold'; font-size: 70px;">76</div>
+                      <div class="h6 " style="color:  hsl(0, 0%, 100%,0.5) ; font-weight: 550;">of 100</div>
+                    </div>  
+                  </div>
+                  <div class="h3" id="great">Great</div>
+                  <div class="text d-flex flex-column align-items-center mb-5" >
+                    <div>You scored higher than 65% of the</div>
+                    <div>people who have taken these tests.</div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-6 el2" style="border-radius: 20px;">
+              <div class="row grade m-2 mb-0 " id="summary">Summary</div>
+              <div class="row grade m-2 p-3 " style="background-color: hsl(0, 100%, 67%,0.1); " >
+                <div class="col-8 label d-flex justify-content-start" style="color:hsl(0, 100%, 67%) ;">
+                  <img src="assets/images/icon-reaction.svg" alt="">
+                  Reaction</div>
+                <div class="col-2 num1 ">80 </div>
+                <div class="col-1 num2 p-0">/100</div>   
+              </div>
+              <div class="row grade m-2 p-3" style="background-color: hsl(39, 100%, 56%,0.1); " >
+                <div class="col-8 label d-flex justify-content-start" style="color:hsl(39, 100%, 56%) ;">
+                  <img src="assets/images/icon-memory.svg" alt="">
+                  Memory</div>
+                <div class="col-2 num1 ">92  </div>
+                <div class="col-1 num2 p-0">/100</div>   
+              </div>
+              <div class="row grade m-2 p-3" style="background-color: hsl(166, 100%, 37%,0.1); " >
+                <div class="col-8 label d-flex justify-content-start" style="color:hsl(166, 100%, 37%) ;">
+                  <img src="assets/images/icon-verbal.svg" alt="">
+                  Verbal</div>
+                <div class="col-2 num1 ">61 </div>
+                <div class="col-1 num2 p-0">/100</div>   
+              </div>
+              <div class="row grade m-2 p-3" style="background-color: hsl(234, 85%, 45%,0.1); " >
+                <div class="col-8 label d-flex justify-content-start" style="color:hsl(234, 85%, 45%) ;">
+                  <img src="assets/images/icon-visual.svg" alt="">
+                  Visual</div>
+                <div class="col-2 num1 ">72 </div>
+                <div class="col-1 num2 p-0">/100</div>   
+              </div>
+              <div class=" grade d-flex justify-content-center m-2 p-3 continue" >
+                 Continue 
+               </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
+    </div>
+    
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">AmirHosein Akbarzade</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

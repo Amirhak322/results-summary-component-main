@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'HankenGrotesk_Bold';
+  src: url('assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+@font-face {
+  font-family: 'HankenGrotesk_xBold';
+  src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'HankenGrotesk_md';
+  src: url('assets/fonts/static/HankenGrotesk-Medium.ttf');
+}
+
+body{
+  font-family: 'HankenGrotesk';
+}
+.row{
+  border-radius: 10px;
+  
+}
+.el1{
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%,1));
+  border-radius: 0px 0px 40px 40px;
+  
+}
+.first-col{
+  /* border-radius: 20px; */
+  /* overflow: hidden;
+  position: relative; */
+  
+}
+#result{
+  color:  hsl(0, 0%, 100%,0.5);
+  font-weight: 600;
+
+}
+#circle{
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    /* background: conic-gradient(from 90deg, hsla(256, 72%, 46%, 1) 0deg 180deg,hsla(241, 72%, 46%, 1) 180deg 360deg); */
+    background: radial-gradient(circle , hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 1) ) ;
+  }
+#great{
+  color: white;
+  font-weight: 650;
+}
+.text{
+  text-align: center;
+  font-family: 'HankenGrotesk';
+  color : hsl(221, 100%, 96%,0.5);/*paleblue*/
+  color: hsl(241, 100%, 89% ); /*lavender-num3*/
+  /* hsl(224, 30%, 27%) darkgrayblue --num2--backOfContinue-summary */
+  color:  hsl(0, 0%, 100%,0.5);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* --------------------- */
+.el2{
+  background-color: white;
+}
+.mobile.second-col{
+  height: 60vh;
+}
+.desktop{
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+#summary{
+  font-family: 'HankenGrotesk_Bold';
+  color : hsl(224, 30%, 27%); 
+  font-size: 25px;
+  font-weight: 500;
+  
+}
+.grade{
+  /* data-spacing : */
+  /* padding: 7vw;
+  padding-right: 0px;
+  margin: 10vi;
+  margin-top: 7vh;
+  margin-bottom: 7vh; */
+} 
+.label{
+  font-family: 'HankenGrotesk_Bold';
+  font-size: 20px;
+}
+.num1{
+  color:hsl(224, 30%, 27%);
+  font-family: 'HankenGrotesk_xBold';
+  font-weight: 500;
+  font-size: 20px;
+}
+.num2{
+  font-family: 'HankenGrotesk_Bold';
+  color:grey;
+  font-weight: 500;
+  font-size: 20px;
+}
+.continue{
+  color: white;
+  background-color:hsl(224, 30%, 27%);
+  font-family: 'HankenGrotesk_Bold';
+  font-size: 20px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+

@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onmouseover Event</h2>
+
+<p>Use the addEventListener() method to attach a "mouseover" and "mouseout" event to a h1 element.</p>
+
+<h1 id="demo">Mouse over me</h1>
+
+<script>
+  document.getElementById("demo").addEventListener('click', mouseOver);
+  document.getElementById("demo").addEventListener("mouseout", mouseOut);
+  
+  function mouseOver() {
+    document.getElementById("demo").style.backgroundColor = 'red';
+  }
+  
+  function mouseOut() {
+    document.getElementById("demo").style.backgroundColor = "black";
+  }
+  </script>
+
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      transition: box-shadow 0.3s ease-in-out;
+      position: relative;
+    }
+
+    .box::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform-origin: center;
+      transition: transform 0.3s ease-in-out;
+      pointer-events: none;
+    }
+
+    .box:hover::before {
+      animation: rotateAround 3s linear infinite;
+    }
+
+    @keyframes rotateAround {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg) translate(50px) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(360deg) translate(50px) rotate(-360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="myBox" class="box">این یک متن درون باکس است.</div>
+
+<script>
+  const boxElement = document.getElementById("myBox");
+  boxElement.addEventListener("mousemove", function(event) {
+    const bounding = boxElement.getBoundingClientRect();
+    const relX = event.pageX - bounding.left;
+    const relY = event.pageY - bounding.top;
+    boxElement.style.boxShadow = `${relX}px ${relY}px 10px rgba(0,0,0,0.5)`;
+  });
+</script>
+
+</body>
+</html>
+
